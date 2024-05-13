@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebook Website</title>
+<style>
+  
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+   .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.book {
+    width: calc(25% - 20px);
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .book img {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slide {
+    min-width: 100%;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+
+ .download-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  .download-btn:hover {
+    background-color: #45a049;
+  }
+
+  
+  
+  
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="slider-container">
+    <div class="slides">
+      <!-- First Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?w=740&t=st=1710783826~exp=1710784426~hmac=0dc0858160d4d379c45368765f1e7d7487df513250024336d53fd3d5db32f14f" alt="Book Image">
+      </div>
+      <!-- Second Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?w=740&t=st=1710783893~exp=1710784493~hmac=88aa55b9e42e626440b3026b4072358129131d45455a8ebddeaacf837d6950b5" alt="Book Image">
+      </div>
+      <!-- Third Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740&t=st=1710783894~exp=1710784494~hmac=b7a485b7e00c049f437e3e5a1e021bc6ce4527bb9267e51958c103a8cb6bc3d2" alt="Book Image">
+      </div>
+      <!-- Fourth Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/free-photo/front-view-stacked-books-graduation-cap-ladders-education-day_23-2149241014.jpg?w=360&t=st=1710783894~exp=1710784494~hmac=b4663172447aa0189cca2e43d643cc57990b59c7a23a8d84b4762dbbeed66747" alt="Book Image">
+      </div>
+      <!-- Fifth Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/free-vector/book-composition-with-open-book_23-2147690555.jpg?w=740&t=st=1710783895~exp=1710784495~hmac=a4d207fb9e786ed1f1841ad7b245cbfe34ff3b540cd602c6d240fa9ccef894d9" alt="Book Image">
+      </div>
+      <!-- Sixth Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/premium-vector/set-hand-drawn-books-doodle_6997-2754.jpg?w=740" alt="Book Image">
+      </div>
+      <!-- Seventh Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/premium-photo/books-flying-stack-isolated-white-background_917664-12159.jpg?w=740" alt="Book Image">
+      </div>
+      <!-- Eighth Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/free-vector/flat-book-logo-template-collection_23-2148831975.jpg?w=740&t=st=1710783906~exp=1710784506~hmac=3dd555e932f7387227bc17de863c0bd503ff14708fe4765d1de628a0fe85f12f" alt="Book Image">
+      </div>
+      <!-- Ninth Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/free-psd/realistic-book-cover-presentation_1310-24.jpg?w=740&t=st=1710783915~exp=1710784515~hmac=3f1f6a383e34df701a83066d5af6e315fdf844d264d3dc7d40941f4664fe01be" alt="Book Image">
+      </div>
+      <!-- Tenth Image -->
+      <div class="slide">
+        <img src="https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?w=740&t=st=1710783826~exp=1710784426~hmac=0dc0858160d4d379c45368765f1e7d7487df513250024336d53fd3d5db32f14f" alt="Book Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <!-- First Row -->
+  <div class="book">
+    <img src="https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?w=740&t=st=1710783826~exp=1710784426~hmac=0dc0858160d4d379c45368765f1e7d7487df513250024336d53fd3d5db32f14f" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book1.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?w=740&t=st=1710783893~exp=1710784493~hmac=88aa55b9e42e626440b3026b4072358129131d45455a8ebddeaacf837d6950b5" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book2.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740&t=st=1710783894~exp=1710784494~hmac=b7a485b7e00c049f437e3e5a1e021bc6ce4527bb9267e51958c103a8cb6bc3d2" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book3.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-photo/front-view-stacked-books-graduation-cap-ladders-education-day_23-2149241014.jpg?w=360&t=st=1710783894~exp=1710784494~hmac=b4663172447aa0189cca2e43d643cc57990b59c7a23a8d84b4762dbbeed66747" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book4.pdf')">Download PDF</a>
+  </div>
+  <!-- Second Row -->
+  <div class="book">
+    <img src="https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg?w=740&t=st=1710783895~exp=1710784495~hmac=a4d207fb9e786ed1f1841ad7b245cbfe34ff3b540cd602c6d240fa9ccef894d9" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book5.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/premium-vector/set-hand-drawn-books-doodle_6997-2754.jpg?w=740" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book6.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/premium-photo/books-flying-stack-isolated-white-background_917664-12159.jpg?w=740" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book7.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-vector/flat-book-logo-template-collection_23-2148831975.jpg?w=740&t=st=1710783906~exp=1710784506~hmac=3dd555e932f7387227bc17de863c0bd503ff14708fe4765d1de628a0fe85f12f" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book8.pdf')">Download PDF</a>
+  </div>
+  <!-- Third Row -->
+  <div class="book">
+    <img src="https://img.freepik.com/free-psd/realistic-book-cover-presentation_1310-24.jpg?w=740&t=st=1710783915~exp=1710784515~hmac=3f1f6a383e34df701a83066d5af6e315fdf844d264d3dc7d40941f4664fe01be" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book9.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?w=740&t=st=1710783826~exp=1710784426~hmac=0dc0858160d4d379c45368765f1e7d7487df513250024336d53fd3d5db32f14f" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book10.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_1284-77312.jpg?w=740&t=st=1710783893~exp=1710784493~hmac=88aa55b9e42e626440b3026b4072358129131d45455a8ebddeaacf837d6950b5" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book11.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?w=740&t=st=1710783894~exp=1710784494~hmac=b7a485b7e00c049f437e3e5a1e021bc6ce4527bb9267e51958c103a8cb6bc3d2" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book12.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-photo/front-view-stacked-books-graduation-cap-ladders-education-day_23-2149241014.jpg?w=360&t=st=1710783894~exp=1710784494~hmac=b4663172447aa0189cca2e43d643cc57990b59c7a23a8d84b4762dbbeed66747" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book13.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg?w=740&t=st=1710783895~exp=1710784495~hmac=a4d207fb9e786ed1f1841ad7b245cbfe34ff3b540cd602c6d240fa9ccef894d9" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book14.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/premium-vector/set-hand-drawn-books-doodle_6997-2754.jpg?w=740" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book15.pdf')">Download PDF</a>
+  </div>
+  <div class="book">
+    <img src="https://img.freepik.com/premium-photo/books-flying-stack-isolated-white-background_917664-12159.jpg?w=740" alt="Book Image">
+    <a href="#" class="download-btn" onclick="downloadPDF('book16.pdf')">Download PDF</a>
+  </div>
+</div>
+
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlides() {
+    slides.forEach(slide => {
+      slide.style.display = "none";
+    });
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+  showSlides();
+  
+  
+  function downloadPDF(filename) {
+  // Dummy function for demonstration
+  alert('Downloading ' + filename);
+  // Here you can implement the actual download functionality
+}
+  
+  
+</script>
+
+</body>
+</html>
